@@ -2,7 +2,8 @@
 Sample css code
 */
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
+body{background-color:lightgreen;
+},
 html {
   height: 100%;
 }
@@ -18,9 +19,9 @@ html {
 /* Position text in the middle */
 .middle {
   position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
+  color: black;
+  top: 40%;
+  left: 10%;
   text-align: center;
   font-size: 25px;
 }
@@ -45,3 +46,11 @@ html {
   color: red;
   text-decoration: none;
 }
+/*Change format for facts about data*/
+.facts {
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	text-align: left;
+}
+
