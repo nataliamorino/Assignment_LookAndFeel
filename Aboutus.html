@@ -2,48 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"><style>
-    * {box-sizing: border-box;}
-    .column {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-    }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @media only screen and (max-width: 600px)
-    { /*For mobile phones*/
-      .leftMenu,
-      .rightMenu,
-      .mainBody
-      {
-          width: 100%;  
-
-      }
-    }
-    @media only screen and (min-width: 600px) and (max-width: 768px)
-    { /*For tablets*/
-      .leftMenu, 
-      .rightMenu, 
-      .mainBody 
-      {
-          width: 80%;  
-
-      }
-    }
-    @media only screen and (min-width: 912px) { /*For desktops*/
-        .leftMenu {
-            width: 26%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            box-sizing: border-box;
         }
-    }
-</style>
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
-  <title>About Us</title>
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media only screen and (max-width: 600px) { /*For mobile phones*/
+            .leftMenu,
+            .rightMenu,
+            .mainBody {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 768px) { /*For tablets*/
+            .leftMenu,
+            .rightMenu,
+            .mainBody {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (min-width: 912px) { /*For desktops*/
+            .leftMenu {
+                width: 26%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>About Us</title>
 </head>
 <body>
     <div class="row">
@@ -70,3 +72,4 @@
         </div>
     </div>
 </body>
+</html>
