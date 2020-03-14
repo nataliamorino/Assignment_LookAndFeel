@@ -72,3 +72,21 @@ html {
     display: table;
     clear: both;
 }
+
+/*FORMAT FOR TABLE IN SUB*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #EDBB99;
+}
