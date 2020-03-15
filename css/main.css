@@ -170,16 +170,12 @@ hr {
         }
 
             .mainnav ul li a {
+                color: white;
                 opacity: 0.7;
             }
 
     .mainnav a:visited {
         color: white;
-    }
-
-    li.active {
-        background-color: white;
-        opacity: 0.8;
     }
 
 @media screen and (max-width: 736px) {
