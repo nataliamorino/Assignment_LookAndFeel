@@ -1,22 +1,75 @@
 ﻿<!DOCTYPE html>
-<html>
+<html id="graphs">
 <head>
     <meta charset="utf-8">
-    <title>Main Page</title>
-    <style>
-        body {
-            margin: 0 15%;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <title>Visualizing Insights</title>
 </head>
 <body>
-    <a href="LandingPage.html">Home</a>
-    <a href="Sub.html">Descriptive Statistics</a>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/27.embed?link=false&modebar=false&logo=false" height="420" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/25.embed?link=false&modebar=false&logo=false" height="700" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/21.embed?link=false&modebar=false&logo=false" height="420" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/23.embed?link=false&modebar=false&logo=false" height="525" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/19.embed?link=false&modebar=false&logo=false" height="800" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/8.embed?link=false&modebar=false&logo=false" height="700" width="100%"></iframe>
+
+    <div class="main">
+        <div id="header-wrapper">
+            <nav class="mainnav">
+                <ul>
+                    <li><a href="LandingPage.html">Home</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="SUB.html">Hospital Charge Dataset</a></li>
+                    <li><a href="graphs.html">Visualizing Insights</a></li>
+                </ul>
+                <hr />
+            </nav>
+
+            <h1>Visualizing Insights</h1>
+        </div>
+
+        <nav id="graph-nav">
+            <ul>
+                <li><a href="#average-ct" class="scrolly">Total Discharges by DRGs</a></li>
+                <li><a href="#average-by-drg" class="scrolly">Average Total Payments by DRGs</a></li>
+                <li><a href="#average-by-state" class="scrolly">Average Total Payments by State</a></li>
+                <li><a href="#diff-by-location" class="scrolly">Difference in Average Total Payments by Region</a></li>
+                <li><a href="#diff-by-drg" class="scrolly">Difference in Average Total Payments by DRGs</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div id="average-ct">
+                <h2>Total Discharges by DRGs</h2>
+                <p>DRGs are a classification system that groups similar clinical conditions (diagnoses) and the procedures furnished by the hospital during the stay. What are the most common DRGs according to this dataset?</p>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/27.embed?link=false&modebar=false&logo=false" height="420" width="100%"></iframe>
+            </div>
+
+            <div id="average-by-drg">
+                <h2>Average Total Payments by DRGs</h2>
+                <p>What are the most expensive DRGs? The information is based on average total payments.</p>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/25.embed?link=false&modebar=false&logo=false" height="700" width="100%"></iframe>
+            </div>
+
+            <div id="average-by-state">
+                <h2>Average Total Payments by State</h2>
+                <p>How do states differ in their average charges for a DRG? Here is the information with the most expensive states coming first:</p>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/21.embed?link=false&modebar=false&logo=false" height="420" width="100%"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/23.embed?link=false&modebar=false&logo=false" height="525" width="100%"></iframe>
+            </div>
+
+            <div id="diff-by-location">
+                <h2>Difference in Average Total Payments by Region</h2>
+                <p>How about the difference between the highest and the lowest charges in the same location? Here is the breakdown of locations with the largest difference, which can help find more affordable options in a region. The scatterplot demonstrates that more expensive DRGs tend to have more difference in pricing.</p>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/19.embed?link=false&modebar=false&logo=false" height="800" width="100%"></iframe>
+            </div>
+
+            <div id="diff-by-drg">
+                <h2>Difference in Average Total Payments by DRGs</h2>
+                <p>Similarly, here is the list of price variability by DRGs. Conditions on top differ in their charges the most, so patients might be able to find more affordable alternatives.</p>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~daryagah/8.embed?link=false&modebar=false&logo=false" height="700" width="100%"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
+    </html>
