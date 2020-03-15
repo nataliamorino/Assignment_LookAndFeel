@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en" id="main-page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+
+</head>
+
+<body>
+    <div id="header-wrapper">
+        <nav class="mainnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="statistics.html">Hospital Charge Dataset</a></li>
+                <li><a href="graphs.html">Visualizing Insights</a></li>
+            </ul>
+            <hr />
+        </nav>
+
+        <h1>About Hospital Charge Data</h1>
+        <ul id="button">
+            <li><a href="#data-model" class="scrolly">See Our Data Model</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>
+            Inpatient Prospective Payment System (IPPS) Provider Summary for the Top 100 Diagnosis-Related Groups (DRG) - FY2011
+        </h2>
+        <br />
+        <p><a href="https://data.cms.gov/Medicare-Inpatient/Inpatient-Prospective-Payment-System-IPPS-Provider/97k6-zzx3">Click here to view this dataset</a></p>
+        <br />
+        <h3>
+            Facts about this dataset
+        </h3>
+        <div class="facts">
+            <ul>
+                <li>Hospital-specific charges</li>
+                <li>3,000 U.S. hospitals that receive Medicare Inpatient Prospective Payment System </li>
+                <li>Top 100 most frequently billed discharges</li>
+            </ul>
+        </div>
+    </div>
+
+        <div id="data-model">
+            <h2>Data Model</h2>
+            <p>
+                Below is shown the data model for our project. All entities and relationships between them are identified. <br /><br /><br />
+                <img class="diagram" src="./img/data_model.jpg" alt="Data Model">
+            </p>
+        </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
